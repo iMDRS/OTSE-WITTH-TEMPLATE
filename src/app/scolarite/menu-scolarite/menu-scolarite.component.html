@@ -1,27 +1,47 @@
 <!---------------------------------- MENU ACCE RAPIDE-------------------------------------->
 <nav class="navbar navbar-default navbar-static-top fixed-top" role="navigation" >
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" routerLink="index.html">
                   Espace - ESTO
                 </a>
             </div>
             <ul class="nav justify-content-center nav-pills nav-fill">
               <li class="nav-item">
-                <a class="nav-link" href="#">Active</a>
+                <a class="nav-link" routerLink="">Active</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" routerLink="">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" routerLink="">Link</a>
               </li>
               </ul>
               <div class="nav">
-                <div class="nav dropdown justify-content-center mx-1">
-                  <button class="btn btn-primary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-bell fa-4" aria-hidden="true"></i> Notification
+                <div class="nav dropdown justify-content-center mx-1 ">
+                  <button class="btn btn-light dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-envelope fa-4" aria-hidden="true"></i>
                   </button>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-menu dropdown-menu-right notify" aria-labelledby="dropdownMenuButton">
+                    <p >Something else hereSomething else hereSomething else here</p>
+                    <p >Something else hereSomething else hereSomething else here</p>
+                    <p >Something else hereSomething else hereSomething else here</p>
+                  </div>
+                </div>
+                <div class="nav dropdown justify-content-center mx-1 ">
+                  <button class="btn btn-light dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-list-ul fa-4" aria-hidden="true"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right notify" aria-labelledby="dropdownMenuButton">
+                    <p >Something else hereSomething else hereSomething else here</p>
+                    <p >Something else hereSomething else hereSomething else here</p>
+                    <p >Something else hereSomething else hereSomething else here</p>
+                  </div>
+                </div>
+                <div class="nav dropdown justify-content-center mx-1 ">
+                  <button class="btn btn-light dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-bell fa-4" aria-hidden="true"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right notify" aria-labelledby="dropdownMenuButton">
 
                     <p >Something else hereSomething else hereSomething else here</p>
                     <p >Something else hereSomething else hereSomething else here</p>
@@ -29,13 +49,20 @@
                   </div>
                 </div>
                 <div class="nav dropdown justify-content-center mx-1">
-                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-user fa-4" aria-hidden="true"></i> UserName
+                  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user fa-5" aria-hidden="true"></i>
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" routerLink="">
+                      <i class="fa fa-user fa-5" aria-hidden="true" ></i>Profile
+                    </a>
+                    <a class="dropdown-item" routerLink="">
+                      <i class="fa fa-gear fa-5" aria-hidden="true"></i>Paramétre
+                    </a>
+                    <div class="dropdown-divider border-top"></div>
+                    <a class="dropdown-item" routerLink="">
+                      <i class="fa fa-sign-out fa-5" aria-hidden="true"></i>Logout
+                    </a>
                   </div>
                 </div>
               </div>
@@ -47,23 +74,38 @@
           <img src="../../assets/img/logo.png" class="logo img-fluid mx-auto d-block mb-3" alt="">
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
-                  <a href="#">
-                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  <a routerLink="home">
+                  <i class="fa fa-home fa-lg"></i> Home
                   </a>
                 </li>
-
-                <li  data-toggle="collapse" data-target="#products" class="collapsed ">
-                  <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+                <hr>
+                <li class="title mb-2 px-2 py-2">
+                  <a>
+                 Gestion de demandes
+                  </a>
                 </li>
-                <ul class="sub-menu collapse" id="products">
-                    <li><a href="#">CSS3 Animation</a></li>
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Buttons</a></li>
+                <li  data-toggle="collapse" data-target="#attestation" class="collapsed ">
+                  <a><i class="fa fa-file-text fa-3"></i> Attestation de scolarité <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="attestation">
+                    <li> <i class="fa fa-spinner fa-l"></i> <a routerLink="#">En cours de traitement</a></li>
+                    <li> <i class="fa fa-check fa-l"></i> <a routerLink="#">Livrées</a></li>
+                    <li> <i class="fa fa-ban fa-l"></i> <a routerLink="#">Refusées</a></li>
+                    <li> <i class="fa fa-list fa-l"></i> <a routerLink="all">Tous les demandes</a></li>
+                </ul>
+                <li  data-toggle="collapse" data-target="#diplome" class="collapsed ">
+                  <a><i class="fa fa-graduation-cap fa-3"></i> Retrait de diplômes <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="diplome">
+                    <li> <i class="fa fa-spinner fa-l"></i> <a routerLink="#">En cours de traitement</a></li>
+                    <li> <i class="fa fa-check fa-l"></i> <a routerLink="#">Livrées</a></li>
+                    <li> <i class="fa fa-ban fa-l"></i> <a routerLink="#">Refusées</a></li>
+                    <li> <i class="fa fa-list fa-l"></i> <a routerLink="#">Tous les demandes</a></li>
                 </ul>
 
-
+                <hr>
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+                  <a routerLink="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="service">
                   <li>New Service 1</li>
@@ -73,7 +115,7 @@
 
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                  <a routerLink="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="new">
                   <li>New New 1</li>
@@ -83,13 +125,13 @@
 
 
                  <li>
-                  <a href="#">
+                  <a routerLink="#">
                   <i class="fa fa-user fa-lg"></i> Profile
                   </a>
                   </li>
 
                  <li>
-                  <a href="#">
+                  <a routerLink="#">
                   <i class="fa fa-users fa-lg"></i> Users
                   </a>
                 </li>
