@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ScolariteService } from '../scolarite.service';
+import { demande } from '../demande';
+import { Observable } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-attestation',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttestationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _serv : ScolariteService) { }
 
   ngOnInit() {
+  //  setInterval( () => {
+
+
+
+    //}, 2000);
+
   }
 
 }

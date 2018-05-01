@@ -1,0 +1,11 @@
+<div *ngIf="dem as d; else loading" id="cities">
+   <ul>
+    <li *ngFor="let d of dem">
+      <span class="idtext">{{d.id}}</span> -- {{d.num_appoge}} -- {{d.date_demande}}
+    </li>
+   </ul>
+   <ng-template  #loading>
+      loading
+    </ng-template>
+ </div>
+<div class="container"></div>

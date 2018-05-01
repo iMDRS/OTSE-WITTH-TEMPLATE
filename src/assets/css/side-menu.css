@@ -106,10 +106,10 @@
   border-left: 3px solid #007bff;
 }
 .nav-side-menu .title {
-  background-color: #007bff;
-  color: lightgray;
+  background-color: lightgray;
+  color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   font-family: 'Gugi', cursive;
 }
 .nav-side-menu li {

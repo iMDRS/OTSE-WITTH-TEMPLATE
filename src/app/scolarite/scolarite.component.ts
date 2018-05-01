@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ScolariteService } from './scolarite.service';
+import { Observable } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-scolarite',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScolariteComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public _serv : ScolariteService) { }
 
   ngOnInit() {
+
   }
 
 }

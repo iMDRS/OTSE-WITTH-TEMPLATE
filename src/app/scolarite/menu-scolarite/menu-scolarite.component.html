@@ -53,7 +53,7 @@
                     <i class="fa fa-user fa-5" aria-hidden="true"></i>
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" routerLink="">
+                    <a class="dropdown-item" routerLink="profile">
                       <i class="fa fa-user fa-5" aria-hidden="true" ></i>Profile
                     </a>
                     <a class="dropdown-item" routerLink="">
@@ -86,21 +86,21 @@
                   <a><i class="fa fa-file-text fa-3"></i> Attestation de scolarité <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="attestation">
-                    <li> <i class="fa fa-plus fa-3"></i> <a routerLink="#">Nouvelles demandes</a></li>
-                    <li> <i class="fa fa-spinner fa-3"></i> <a routerLink="#">En cours de traitement</a></li>
-                    <li> <i class="fa fa-check fa-3"></i> <a routerLink="#">Livrées</a></li>
-                    <li> <i class="fa fa-ban fa-3"></i> <a routerLink="#">Refusées</a></li>
-                    <li> <i class="fa fa-list fa-3"></i> <a routerLink="all">Tous les demandes</a></li>
+                    <li> <i class="fa fa-plus fa-3"></i> <a routerLink="attestation/new">Nouvelles demandes</a></li>
+                    <li> <i class="fa fa-spinner fa-3"></i> <a routerLink="attestation/now">En cours de traitement</a></li>
+                    <li> <i class="fa fa-check fa-3"></i> <a routerLink="attestation/done">Livrées</a></li>
+                    <li> <i class="fa fa-ban fa-3"></i> <a routerLink="attestation/ban">Refusées</a></li>
+                    <li> <i class="fa fa-list fa-3"></i> <a routerLink="attestation/all">Tous les demandes</a></li>
                 </ul>
                 <li  data-toggle="collapse" data-target="#diplome" class="collapsed ">
                   <a><i class="fa fa-graduation-cap fa-3"></i> Retrait de diplômes <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="diplome">
-                    <li> <i class="fa fa-plus fa-3"></i> <a routerLink="#">Nouvelles demandes</a></li>
-                    <li> <i class="fa fa-spinner fa-l"></i> <a routerLink="#">En cours de traitement</a></li>
-                    <li> <i class="fa fa-check fa-l"></i> <a routerLink="#">Livrées</a></li>
-                    <li> <i class="fa fa-ban fa-l"></i> <a routerLink="#">Refusées</a></li>
-                    <li> <i class="fa fa-list fa-l"></i> <a routerLink="#">Tous les demandes</a></li>
+                  <li> <i class="fa fa-plus fa-3"></i> <a routerLink="diplome/new">Nouvelles demandes</a></li>
+                  <li> <i class="fa fa-spinner fa-3"></i> <a routerLink="diplome/now">En cours de traitement</a></li>
+                  <li> <i class="fa fa-check fa-3"></i> <a routerLink="diplome/done">Livrées</a></li>
+                  <li> <i class="fa fa-ban fa-3"></i> <a routerLink="diplome/ban">Refusées</a></li>
+                  <li> <i class="fa fa-list fa-3"></i> <a routerLink="diplome/all">Tous les demandes</a></li>
                 </ul>
 
                 <hr>
